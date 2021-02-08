@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Git init
 
-## Getting Started
+*by Elian Van Cutsem*
 
-First, run the development server:
+This project is an example used to explain how git works together with Github and Netlify.
+Don't hesitate and contact me if you have any questions regarding git, github or other related stuff!
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. [Github CLI](<https://cli.github.com/>), git CLI or a Git GUI
+1. Basic programming knowledge
+## Cloning the project
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This project can be cloned via HTTPS. To do that just use `git clone https://github.com/ElianVanCutsem/odisee-git-init.git`.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This can also be done via the github CLI, just type `gh repo clone ElianVanCutsem/odisee-git-init`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Issues
 
-## Learn More
+Issues are visible in the Issue subtab above or can be queried via the github CLI by using `gh issue list` and `gh issue view 1`
 
-To learn more about Next.js, take a look at the following resources:
+## Branching
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A branch can be created via any git GUI. A branch represents a new line of development and can later be merged together. A branch is typically made for issues or features that take more commits or to achieve parallel feature implementation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Committing
 
-## Deploy on Vercel
+When a commit is made, it will compile all added files into a .diff file with what was added or deleted. When it's pushed it'll be visible in the git timeline on the remote.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Pull requests
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Pull requests can be made via the pull requests subtab or via github cli. A pull request is a request to merge two branches.
+
+## Deployment
+
+In this project, we'll use Netlify to run our app. When we push to the master branch an automated build process will start and rebuild the online deployment.
+
+When a pull request is made from another branch to the main branch, Netlify will merge the branches and try a branch deploy. This way we can test out our merged branches as a deployment before we take any definite actions.
+
+## Further
+
+Every tool has it's own features, so don't hesitate to look around and give everything a spin. Only that way you'll figur out what you like and what improves your workflow.
